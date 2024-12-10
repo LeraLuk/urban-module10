@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Shop</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="filter">
+          <label for="category">Select a category:</label>
+          <select id="category" onchange="filterProducts()">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+
+        <div id="products" class="products"></div>
+
+        <button id="loadMore" onclick="loadMoreProducts()">Load More</button>
+
+        <div id="addProduct" class="add-product">
+          <h2>Add a New Product</h2>
+          <form onsubmit="addProduct(event)">
+            <input type="text" id="name" placeholder="Product Name" required />
+            <input type="number" id="price" placeholder="Price" required />
+            <input
+              type="text"
+              id="description"
+              placeholder="Description"
+              required
+            />
+            <select id="categorySelect" required>
+              <option value="" disabled selected>Select a Category</option>
+            </select>
+            <button type="submit">Add Product</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>

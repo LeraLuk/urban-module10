@@ -1,0 +1,141 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background-color: #677dff;
+}
+header {
+  width: calc(100vw - 300px - 300px);
+  margin: 0 auto;
+}
+main {
+  width: calc(100vw - 300px - 300px);
+  margin: 0 auto;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px 50px;
+}
+.products > div {
+  width: 27%;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.products > div h3 {
+  color: #110074;
+  font-size: 24px;
+}
+.products > div p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+}
+.products > div .description p {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  height: 47px;
+  overflow-y: hidden;
+}
+.products > div .description {
+  height: 10vh;
+  position: relative;
+  width: 100%;
+}
+.products > div .description p:hover {
+  height: fit-content;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  border: 3px solid #c7c8ff;
+  border-top: none;
+  border-radius: 20px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 10px;
+  left: -13px;
+  top: -10px;
+  width: 100%;
+}
+.products > div img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+.products > div button {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #110074;
+  background: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.filter select {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid #110074;
+  background: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.filter label {
+  font-weight: 600;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.filter {
+  margin-bottom: 70px;
+  background-color: white;
+  /* padding: 10px; */
+  border-radius: 15px;
+}
+#loadMore {
+  width: fit-content;
+  padding: 10px;
+  border: 2px solid #110074;
+  background: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 50px;
+  background-color: white;
+}
+.add-product {
+  align-self: flex-start;
+  width: 350px;
+}
+.add-product form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+.add-product form * {
+  padding: 10px;
+  border: 2px solid #110074;
+  background: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: white;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
